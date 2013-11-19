@@ -11,6 +11,7 @@ public class Control : MonoBehaviour {
 	public GUIText txt_timer;
 	
 	private static Control instancia; 
+	public static FiguraScript figuraActiva; 
 	
 	private void Awake(){
 		instancia = this;	
@@ -28,12 +29,18 @@ public class Control : MonoBehaviour {
 		if(timer>=0){
 			timer -= Time.deltaTime;
 			txt_timer.guiText.text = timer.ToString("F1");
-		}
+		} 
 	}
 	
 	public static Control getInstancia{
 		get{
 			return instancia;	
+		}
+	}
+
+	public static FiguraScript getFiguraActiva{
+		get{
+			return figuraActiva;	
 		}
 	}
 	
