@@ -27,17 +27,28 @@ public class BloqueScript : MonoBehaviour {
 	private IEnumerator Asentar(){
 	
 		yield return new WaitForSeconds(0.5f);
-		Control.getFiguraActiva.asentado = true;
-		Vector2 aux = Control.getFiguraActiva.rigidbody2D.velocity;
-		aux.x = 0;
-		Control.getFiguraActiva.rigidbody2D.velocity = aux;
-		
-		Vector3 aux2 = Control.figuraActiva.transform.position;
-		aux2.x = Mathf.Round((aux2.x - 0.25f)*2)/2+0.25f;
-		Control.figuraActiva.transform.position = aux2;
-		
-		Control.figuraActiva = null;
+		if(Control.figuraActiva != null){
+			Control.getFiguraActiva.asentado = true;
+			Vector2 aux = Control.getFiguraActiva.rigidbody2D.velocity;
+			aux.x = 0;
+			Control.getFiguraActiva.rigidbody2D.velocity = aux;
+			
+			Vector3 aux2 = Control.figuraActiva.transform.position;
+			aux2.x = Mathf.Round((aux2.x - 0.25f)*2)/2+0.25f;
+			Control.figuraActiva.transform.position = aux2;
+			
+			Control.figuraActiva = null;
+			if(Control.figuraActiva == null){
+				Debug.Log("entro");
+				StartCoroutine("EsperarAsentar");
+			}
+		}
+	}
+
+	private IEnumerator EsperarAsentar(){
+		yield return new WaitForSeconds(1.0f);
 		if(Control.figuraActiva == null){
+			Debug.Log("entro");
 			Control.getInstancia.crearFigura();
 		}
 	}
