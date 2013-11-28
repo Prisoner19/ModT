@@ -12,6 +12,8 @@ public class Control : MonoBehaviour {
 	
 	private static Control instancia; 
 	public static FiguraScript figuraActiva; 
+
+	public GameObject[] lineas;
 	
 	private void Awake(){
 		instancia = this;	
@@ -21,6 +23,10 @@ public class Control : MonoBehaviour {
 	void Start() {
 		txt_freeze.guiText.text = "";
 		crearFigura();
+		lineas = new GameObject[10];
+		for(int i=0; i<10;i++){
+			lineas[i] = new GameObject("Linea"+i);
+		}
 	}
 	
 	// Update is called once per frame
@@ -55,7 +61,7 @@ public class Control : MonoBehaviour {
 	
 	public void crearFigura(){
 		
-		Vector3 posInicio = new Vector3(0.25f,5.75f,1.0f);
+		Vector3 posInicio = new Vector3(0.25f,5.75f,0);
 		
 		int rand_fig = UnityEngine.Random.Range (1,6);
 		

@@ -789,6 +789,7 @@ MonoBehaviour:
   timer: 60
   txt_freeze: {fileID: 1495118758}
   txt_timer: {fileID: 264510399}
+  lineas: []
 --- !u!1 &466046041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2750,26 +2751,26 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1175064367}
-  - {fileID: 1346729471}
   - {fileID: 1861618450}
-  - {fileID: 146920087}
+  - {fileID: 989909204}
   - {fileID: 265666477}
-  - {fileID: 2055437616}
+  - {fileID: 1175064367}
   - {fileID: 447807581}
-  - {fileID: 2022902401}
-  - {fileID: 1986193034}
-  - {fileID: 825571118}
-  - {fileID: 29281992}
+  - {fileID: 2055437616}
   - {fileID: 1236076457}
-  - {fileID: 727157601}
-  - {fileID: 1444188358}
+  - {fileID: 1986193034}
+  - {fileID: 2022902401}
+  - {fileID: 1346729471}
+  - {fileID: 1448330292}
   - {fileID: 861974280}
+  - {fileID: 727157601}
   - {fileID: 1824585133}
   - {fileID: 17960215}
-  - {fileID: 989909204}
+  - {fileID: 146920087}
+  - {fileID: 825571118}
+  - {fileID: 1444188358}
+  - {fileID: 29281992}
   - {fileID: 677038856}
-  - {fileID: 1448330292}
   m_Father: {fileID: 0}
 --- !u!1001 &1288643638
 Prefab:
