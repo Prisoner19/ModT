@@ -84,6 +84,7 @@ GameObject:
   - 4: {fileID: 17960215}
   - 212: {fileID: 17960217}
   - 61: {fileID: 17960216}
+  - 114: {fileID: 17960218}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -139,6 +140,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 73e11929c3b305f4aa6bf37cb68b4523, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &17960218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1836231939}
+  m_GameObject: {fileID: 17960214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &29281989
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +162,7 @@ GameObject:
   - 4: {fileID: 29281992}
   - 212: {fileID: 29281991}
   - 61: {fileID: 29281990}
+  - 114: {fileID: 29281993}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -204,6 +218,18 @@ Transform:
   m_Children:
   - {fileID: 787351625}
   m_Father: {fileID: 1240580173}
+--- !u!114 &29281993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1396381400}
+  m_GameObject: {fileID: 29281989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &112461945
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,7 +276,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112461945}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -7.46289873, y: .0155746937, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -264,6 +290,7 @@ GameObject:
   - 4: {fileID: 146920087}
   - 212: {fileID: 146920089}
   - 61: {fileID: 146920088}
+  - 114: {fileID: 146920090}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -319,6 +346,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 73e11929c3b305f4aa6bf37cb68b4523, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &146920090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 477166398}
+  m_GameObject: {fileID: 146920086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &221142758
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,6 +482,7 @@ GameObject:
   - 4: {fileID: 265666477}
   - 212: {fileID: 265666476}
   - 61: {fileID: 265666475}
+  - 114: {fileID: 265666478}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -498,6 +538,18 @@ Transform:
   m_Children:
   - {fileID: 1196846344}
   m_Father: {fileID: 1240580173}
+--- !u!114 &265666478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 501370171}
+  m_GameObject: {fileID: 265666474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &279556086
 Prefab:
   m_ObjectHideFlags: 0
@@ -692,6 +744,7 @@ GameObject:
   - 4: {fileID: 447807581}
   - 212: {fileID: 447807583}
   - 61: {fileID: 447807582}
+  - 114: {fileID: 447807584}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -747,6 +800,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 73e11929c3b305f4aa6bf37cb68b4523, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &447807584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 715872006}
+  m_GameObject: {fileID: 447807580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &451307330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +1106,8 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: .400000006
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 9e216d05da4fc1445ae3091a3a81196d, type: 2}
   m_RootGameObject: {fileID: 554624946}
   m_IsPrefabParent: 0
@@ -1441,6 +1507,7 @@ GameObject:
   - 4: {fileID: 677038856}
   - 212: {fileID: 677038858}
   - 61: {fileID: 677038857}
+  - 114: {fileID: 677038859}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -1496,6 +1563,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 73e11929c3b305f4aa6bf37cb68b4523, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &677038859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1944043202}
+  m_GameObject: {fileID: 677038855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &715872006
 Prefab:
   m_ObjectHideFlags: 0
@@ -1546,6 +1625,7 @@ GameObject:
   - 4: {fileID: 727157601}
   - 212: {fileID: 727157600}
   - 61: {fileID: 727157599}
+  - 114: {fileID: 727157602}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -1601,6 +1681,18 @@ Transform:
   m_Children:
   - {fileID: 573306533}
   m_Father: {fileID: 1240580173}
+--- !u!114 &727157602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1684209452}
+  m_GameObject: {fileID: 727157598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &735628722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,6 +1911,7 @@ GameObject:
   - 4: {fileID: 825571118}
   - 212: {fileID: 825571117}
   - 61: {fileID: 825571116}
+  - 114: {fileID: 825571119}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -1874,6 +1967,18 @@ Transform:
   m_Children:
   - {fileID: 221142759}
   m_Father: {fileID: 1240580173}
+--- !u!114 &825571119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1288643638}
+  m_GameObject: {fileID: 825571115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &846026541
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,6 +2053,7 @@ GameObject:
   - 4: {fileID: 861974280}
   - 212: {fileID: 861974282}
   - 61: {fileID: 861974281}
+  - 114: {fileID: 861974283}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -2003,6 +2109,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 73e11929c3b305f4aa6bf37cb68b4523, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &861974283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1749746261}
+  m_GameObject: {fileID: 861974279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &888785370
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,6 +2323,7 @@ GameObject:
   - 4: {fileID: 989909204}
   - 212: {fileID: 989909206}
   - 61: {fileID: 989909205}
+  - 114: {fileID: 989909207}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -2260,6 +2379,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 73e11929c3b305f4aa6bf37cb68b4523, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &989909207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1916409346}
+  m_GameObject: {fileID: 989909203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1107311147
 Prefab:
   m_ObjectHideFlags: 0
@@ -2502,6 +2633,7 @@ GameObject:
   - 4: {fileID: 1175064367}
   - 212: {fileID: 1175064369}
   - 61: {fileID: 1175064368}
+  - 114: {fileID: 1175064370}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -2557,6 +2689,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 73e11929c3b305f4aa6bf37cb68b4523, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1175064370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 279556086}
+  m_GameObject: {fileID: 1175064366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1196846343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2671,6 +2815,7 @@ GameObject:
   - 4: {fileID: 1236076457}
   - 212: {fileID: 1236076459}
   - 61: {fileID: 1236076458}
+  - 114: {fileID: 1236076460}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -2726,6 +2871,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 73e11929c3b305f4aa6bf37cb68b4523, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1236076460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1547637745}
+  m_GameObject: {fileID: 1236076456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1240580172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2822,6 +2979,7 @@ GameObject:
   - 4: {fileID: 1346729471}
   - 212: {fileID: 1346729470}
   - 61: {fileID: 1346729469}
+  - 114: {fileID: 1346729472}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -2877,6 +3035,18 @@ Transform:
   m_Children:
   - {fileID: 888785371}
   m_Father: {fileID: 1240580173}
+--- !u!114 &1346729472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 318810560}
+  m_GameObject: {fileID: 1346729468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1396381400
 Prefab:
   m_ObjectHideFlags: 0
@@ -2927,6 +3097,7 @@ GameObject:
   - 4: {fileID: 1444188358}
   - 212: {fileID: 1444188360}
   - 61: {fileID: 1444188359}
+  - 114: {fileID: 1444188361}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -2982,6 +3153,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 73e11929c3b305f4aa6bf37cb68b4523, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1444188361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1690475368}
+  m_GameObject: {fileID: 1444188357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1448330289
 GameObject:
   m_ObjectHideFlags: 0
@@ -2992,6 +3175,7 @@ GameObject:
   - 4: {fileID: 1448330292}
   - 212: {fileID: 1448330291}
   - 61: {fileID: 1448330290}
+  - 114: {fileID: 1448330293}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -3047,6 +3231,18 @@ Transform:
   m_Children:
   - {fileID: 2069536274}
   m_Father: {fileID: 1240580173}
+--- !u!114 &1448330293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2135970197}
+  m_GameObject: {fileID: 1448330289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1495118757
 GameObject:
   m_ObjectHideFlags: 0
@@ -3499,6 +3695,7 @@ GameObject:
   - 4: {fileID: 1824585133}
   - 212: {fileID: 1824585135}
   - 61: {fileID: 1824585134}
+  - 114: {fileID: 1824585136}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -3554,6 +3751,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 73e11929c3b305f4aa6bf37cb68b4523, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1824585136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1821609169}
+  m_GameObject: {fileID: 1824585132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1836231939
 Prefab:
   m_ObjectHideFlags: 0
@@ -3604,6 +3813,7 @@ GameObject:
   - 4: {fileID: 1861618450}
   - 212: {fileID: 1861618449}
   - 61: {fileID: 1861618448}
+  - 114: {fileID: 1861618451}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -3659,6 +3869,18 @@ Transform:
   m_Children:
   - {fileID: 2030134848}
   m_Father: {fileID: 1240580173}
+--- !u!114 &1861618451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 440575921}
+  m_GameObject: {fileID: 1861618447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1916409346
 Prefab:
   m_ObjectHideFlags: 0
@@ -3749,6 +3971,7 @@ GameObject:
   - 4: {fileID: 1986193034}
   - 212: {fileID: 1986193033}
   - 61: {fileID: 1986193032}
+  - 114: {fileID: 1986193035}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -3804,6 +4027,18 @@ Transform:
   m_Children:
   - {fileID: 1575224247}
   m_Father: {fileID: 1240580173}
+--- !u!114 &1986193035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1204381345}
+  m_GameObject: {fileID: 1986193031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2022902400
 GameObject:
   m_ObjectHideFlags: 0
@@ -3814,6 +4049,7 @@ GameObject:
   - 4: {fileID: 2022902401}
   - 212: {fileID: 2022902403}
   - 61: {fileID: 2022902402}
+  - 114: {fileID: 2022902404}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -3869,6 +4105,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 73e11929c3b305f4aa6bf37cb68b4523, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &2022902404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1107311147}
+  m_GameObject: {fileID: 2022902400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2030134847
 GameObject:
   m_ObjectHideFlags: 0
@@ -3943,6 +4191,7 @@ GameObject:
   - 4: {fileID: 2055437616}
   - 212: {fileID: 2055437618}
   - 61: {fileID: 2055437617}
+  - 114: {fileID: 2055437619}
   m_Layer: 0
   m_Name: Bloque
   m_TagString: Untagged
@@ -3998,6 +4247,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 73e11929c3b305f4aa6bf37cb68b4523, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &2055437619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9e216d05da4fc1445ae3091a3a81196d,
+    type: 2}
+  m_PrefabInternal: {fileID: 535836913}
+  m_GameObject: {fileID: 2055437615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d028937014251824fbbf630d35448f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2069536273
 GameObject:
   m_ObjectHideFlags: 0

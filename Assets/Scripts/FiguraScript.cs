@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class FiguraScript : MonoBehaviour {
@@ -17,7 +17,6 @@ public class FiguraScript : MonoBehaviour {
 	public int estado;
 	public int num_bloques;
 
-
 	// Use this for initialization
 	void Start () {
 		pos = transform.position;
@@ -28,25 +27,35 @@ public class FiguraScript : MonoBehaviour {
 		estado = MOVIENDOSE;
 		aceleracion = false;
 		num_bloques = 4;
+
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
+	
 		if(estado != 4){
 			pos = transform.position;
+
 			if(Input.GetButtonDown("Jump")){
+
 				if(!Control.getInstancia.stop){
+
 					rigidbody2D.velocity = Vector2.zero;
 					Control.getInstancia.txt_freeze.guiText.text = "Freeze time!";
 					estado = CONGELADO;
-					pos.x = Mathf.Round((transform.position.x - 0.25f)*2)/2+0.25f;
-					pos.y = (((Mathf.Floor(((pos.y*4)+1)/2))*2)-1)/4;
-					transform.position = pos;
+					if(GameObject.FindGameObjectWithTag("Cuadricula").transform.childCount==0){
+						Cuadricular();
+					}
+					GameObject.FindGameObjectWithTag("Cuadricula").transform.position = transform.position;
 				}
 				else{
 					rigidbody2D.velocity = vector_speed;
 					Control.getInstancia.txt_freeze.guiText.text = "";
 					estado = MOVIENDOSE;
+					if(Control.getBloque!=null){
+						Control.getInstancia.deseleccionarBloque();
+					}
 				}
 				Control.getInstancia.stop = !Control.getInstancia.stop;
 				
@@ -104,4 +113,34 @@ public class FiguraScript : MonoBehaviour {
 		}
 	}
 
+	public void Cuadricular(){
+
+		Vector3 posNueva;
+		bool mismaPos;
+
+		for(int i=0; i<transform.childCount; i++){
+			for(int j=0; j<4; j++){
+				mismaPos = false;
+				posNueva = transform.GetChild(i).transform.position;
+				switch(j){
+					case 0: posNueva.x += 0.5f; break;
+					case 1: posNueva.x -= 0.5f; break;
+					case 2: posNueva.y += 0.5f; break;
+					case 3: posNueva.y -= 0.5f; break;
+				}
+
+				for(int k=0; k<transform.childCount; k++){
+					if(posNueva == transform.GetChild(k).transform.position){
+						mismaPos = true;
+						break;
+					}
+				}
+
+				if(!mismaPos){
+					Instantiate(Resources.Load("Prefabs/BCuad"), posNueva, transform.rotation);
+				}
+			}
+		}
+	}
 }
+

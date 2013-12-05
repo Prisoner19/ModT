@@ -12,7 +12,7 @@ GameObject:
   - 50: {fileID: 5000000}
   m_Layer: 0
   m_Name: Figura1
-  m_TagString: Untagged
+  m_TagString: Figura
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400008}
   m_Layer: 0
-  m_Name: Bloque
+  m_Name: B1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ GameObject:
   - 61: {fileID: 6100006}
   - 114: {fileID: 11400006}
   m_Layer: 0
-  m_Name: Bloque
+  m_Name: B2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,7 +116,7 @@ GameObject:
   - 61: {fileID: 6100010}
   - 114: {fileID: 11400004}
   m_Layer: 0
-  m_Name: Bloque
+  m_Name: B3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,7 +151,7 @@ GameObject:
   - 61: {fileID: 6100014}
   - 114: {fileID: 11400002}
   m_Layer: 0
-  m_Name: Bloque
+  m_Name: B4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

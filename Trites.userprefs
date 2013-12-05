@@ -1,10 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BloqueScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BCuadScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\FiguraScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BloqueScript.cs" Line="87" Column="4" />
-      <File FileName="Assets\Scripts\Control.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FiguraScript.cs" Line="124" Column="53" />
+      <File FileName="Assets\Scripts\Control.cs" Line="60" Column="18" />
+      <File FileName="Assets\Scripts\BCuadScript.cs" Line="31" Column="4" />
+      <File FileName="Assets\Scripts\BloqueScript.cs" Line="116" Column="76" />
+      <File FileName="Assets\Scripts\PadreCuad.cs" Line="12" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

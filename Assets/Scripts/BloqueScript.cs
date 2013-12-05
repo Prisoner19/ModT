@@ -7,18 +7,13 @@ public class BloqueScript : MonoBehaviour {
 	private bool fijo;
 	private bool inicioCongelado;
 	private int linea;
-	private Vector3 posDrag;
-	private bool clickStarted;
-	private bool clickEnded;
+	private Vector3 posAux;
 
 	// Use this for initialization
 	void Start () {
 		fijo = false;
 		inicioCongelado = false;
 		linea = 0;
-		posDrag = Vector3.zero;
-		clickStarted = false;
-		clickEnded = false;
 	}
 	
 	// Update is called once per frame
@@ -44,73 +39,49 @@ public class BloqueScript : MonoBehaviour {
 			inicioCongelado = false;
 		}
 
-		if(clickEnded){
-			if(Input.GetMouseButtonDown(0)){
-				posDrag = Input.mousePosition;
-				posDrag.x = (Input.mousePosition.x -240)/80;
-				posDrag.y = (Input.mousePosition.y -400)/80;
-				posDrag.x = Mathf.Round((posDrag.x - 0.25f)*2) /2 + 0.25f;
-				posDrag.y = Mathf.Round((posDrag.y - 0.25f)*2) /2 + 0.25f;
-				posDrag.z = 0;
-				transform.position = posDrag;
-				transform.localScale -= new Vector3(0.2f,0.2f,0);
-				clickEnded = false;
-				Debug.Log("Hey");
+	}
+
+
+	private void OnMouseDown(){
+		if(Control.getBloque == null){
+			transform.localScale += new Vector3(0.2f,0.2f,0);
+			Control.bloqueActivo = this;
+		}
+		else{
+			Control.getBloque.transform.localScale -= new Vector3(0.2f,0.2f,0);
+			if(Control.getBloque != this){
+				Control.bloqueActivo = this;
+				transform.localScale += new Vector3(0.2f,0.2f,0);
+			}
+			else{
+				Control.bloqueActivo = null;
 			}
 		}
 	}
-	
-//	void OnMouseDrag(){
-//		posDrag = transform.position;
-//		posDrag.x = (Input.mousePosition.x -240)/80;
-//		posDrag.y = (Input.mousePosition.y -400)/80;
-//		posDrag.z = -1;
-//
-//		posDrag.y = (((Mathf.Floor(((posDrag.y*4)+1)/2))*2)-1)/4;
-//		if(posDrag.y<0){
-//			posDrag.y = Mathf.Floor(Mathf.Abs(posDrag.y*4))/4;
-//			posDrag.y *= -1;
-//		}
-//		else{
-//			posDrag.y = Mathf.Round(Mathf.Abs(posDrag.y*4))/4;
-//		}
-//		posDrag.x = Mathf.Round((posDrag.x - 0.25f)*2) /2 + 0.25f;
-//
-//		transform.position = posDrag;
-//	}
 
-	private void OnMouseDown(){
-		if(!clickStarted){
-			transform.localScale += new Vector3(0.2f,0.2f,0);
-			clickStarted = true;
-			Debug.Log("Clicked!");
+
+	private void OnTriggerEnter2D(Collider2D other){
+		if(other.name=="Trigger"){
+			if(figPadre.estado!=4 || figPadre.estado!=3){
+				figPadre.estado = 3;
+				StartCoroutine("Asentar");
+			}
 		}
 	}
 
-	private void OnMouseUp(){
-		if(clickStarted){
-			clickEnded = true;
-			clickStarted = false;
+	private void OnTriggerExit2D(Collider2D other){
+		if(other.name=="Trigger"){
+			if(figPadre.estado!=4)
+				figPadre.estado = 2;
 		}
 	}
 
-	private void OnTriggerEnter2D(){
-		Debug.Log("choco");
-		if(figPadre.estado!=4 || figPadre.estado!=3){
-			figPadre.estado = 3;
-			StartCoroutine("Asentar");
-		}
-	}
-
-	private void OnTriggerExit2D(){
-		if(figPadre.estado!=4)
-			figPadre.estado = 2;
-	}
-
-	private void OnTriggerStay2D(){
-		if(figPadre.estado==2){
-			figPadre.estado = 3;
-			StartCoroutine("Asentar");
+	private void OnTriggerStay2D(Collider2D other){
+		if(other.name=="Trigger"){
+			if(figPadre.estado==2){
+				figPadre.estado = 3;
+				StartCoroutine("Asentar");
+			}
 		}
 	}
 
@@ -141,6 +112,9 @@ public class BloqueScript : MonoBehaviour {
 
 			figPadre.transform.position = pos;
 			figPadre.rigidbody2D.isKinematic = true;
+			Control.getInstancia.eliminarCuad();
+			Object.Destroy(GameObject.FindGameObjectWithTag("Cuadricula").gameObject);
 		}
 	}
 }
+
