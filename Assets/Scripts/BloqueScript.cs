@@ -31,10 +31,12 @@ public class BloqueScript : MonoBehaviour {
 
 		if(figPadre.estado == 1 && !inicioCongelado){
 			transform.parent = null;
+			transform.parent = GameObject.Find("Temporal").transform;
 			inicioCongelado = true;
 		}
 
 		if(figPadre.estado == 2 && inicioCongelado){
+			transform.parent = null;
 			transform.parent = figPadre.transform;
 			inicioCongelado = false;
 		}
@@ -45,6 +47,7 @@ public class BloqueScript : MonoBehaviour {
 	private void OnMouseDown(){
 		if(Control.getBloque == null){
 			transform.localScale += new Vector3(0.2f,0.2f,0);
+			figPadre.Cuadricular();
 			Control.bloqueActivo = this;
 		}
 		else{

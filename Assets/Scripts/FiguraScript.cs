@@ -44,9 +44,9 @@ public class FiguraScript : MonoBehaviour {
 					rigidbody2D.velocity = Vector2.zero;
 					Control.getInstancia.txt_freeze.guiText.text = "Freeze time!";
 					estado = CONGELADO;
-					if(GameObject.FindGameObjectWithTag("Cuadricula").transform.childCount==0){
-						Cuadricular();
-					}
+//					if(GameObject.FindGameObjectWithTag("Cuadricula").transform.childCount==0){
+//						Cuadricular();
+//					}
 					GameObject.FindGameObjectWithTag("Cuadricula").transform.position = transform.position;
 				}
 				else{
@@ -116,12 +116,13 @@ public class FiguraScript : MonoBehaviour {
 	public void Cuadricular(){
 
 		Vector3 posNueva;
+		Transform temp = GameObject.Find("Temporal").transform;
 		bool mismaPos;
 
-		for(int i=0; i<transform.childCount; i++){
+		for(int i=0; i<temp.childCount; i++){
 			for(int j=0; j<4; j++){
 				mismaPos = false;
-				posNueva = transform.GetChild(i).transform.position;
+				posNueva = temp.GetChild(i).transform.position;
 				switch(j){
 					case 0: posNueva.x += 0.5f; break;
 					case 1: posNueva.x -= 0.5f; break;
@@ -129,15 +130,15 @@ public class FiguraScript : MonoBehaviour {
 					case 3: posNueva.y -= 0.5f; break;
 				}
 
-				for(int k=0; k<transform.childCount; k++){
-					if(posNueva == transform.GetChild(k).transform.position){
+				for(int k=0; k<temp.childCount; k++){
+					if(posNueva == temp.GetChild(k).transform.position){
 						mismaPos = true;
 						break;
 					}
 				}
 
 				if(!mismaPos){
-					Instantiate(Resources.Load("Prefabs/BCuad"), posNueva, transform.rotation);
+					Instantiate(Resources.Load("Prefabs/BCuad"), posNueva, temp.rotation);
 				}
 			}
 		}
