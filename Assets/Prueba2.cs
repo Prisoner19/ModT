@@ -3,11 +3,10 @@ using System.Collections;
 
 public class Prueba2 : MonoBehaviour {
 
-	
-	public Camera myCam;
-	// Use this for initialization
+	private float offset;
+
 	void Start () {
-	
+		offset = 0;
 	}
 
 	void OnMouseDown(){
@@ -17,6 +16,16 @@ public class Prueba2 : MonoBehaviour {
 	
 	void Update()
 	{
-		transform.parent = GameObject.Find("Padre").transform;
+		if(Input.GetKey("a")){
+			rigidbody2D.velocity = Vector3.right * -3;
+			offset--;
+		}
+		else if(Input.GetKey("d")){
+			rigidbody2D.velocity = Vector3.right * 3;
+			offset++;
+		}
+		else if(Input.GetKeyUp("a") || Input.GetKeyUp("d")){
+			rigidbody2D.velocity = Vector3.zero;
+		}
 	}
 }

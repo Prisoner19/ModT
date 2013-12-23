@@ -22,6 +22,7 @@ public class BloqueScript : MonoBehaviour {
 			transform.parent = null;
 			linea = Mathf.FloorToInt((transform.position.y + 4.75f)*2);
 			transform.parent = Control.getInstancia.lineas[linea].transform;
+			Control.getInstancia.verificarLinea(linea);
 			fijo = true;
 			figPadre.num_bloques--;
 			if(figPadre.num_bloques==0)
@@ -92,7 +93,7 @@ public class BloqueScript : MonoBehaviour {
 
 		Vector3 pos; 
 
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(0.3f);
 
 		if(figPadre.estado == 3){
 			figPadre.estado = 4;

@@ -1,15 +1,27 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FiguraScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BloqueScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\FiguraScript.cs" Line="40" Column="36" />
-      <File FileName="Assets\Scripts\Control.cs" Line="17" Column="2" />
-      <File FileName="Assets\Scripts\BCuadScript.cs" Line="26" Column="4" />
-      <File FileName="Assets\Scripts\BloqueScript.cs" Line="55" Column="25" />
       <File FileName="Assets\Scripts\PadreCuad.cs" Line="1" Column="1" />
-      <File FileName="Assets\Prueba2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BloqueScript.cs" Line="42" Column="28" />
+      <File FileName="Assets\Scripts\FiguraScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BloqueBaseScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BCuadScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Control.cs" Line="1" Column="1" />
       <File FileName="Assets\Prueba1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Prueba2.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Scripts" expanded="True">
+              <Node name="BloqueScript.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

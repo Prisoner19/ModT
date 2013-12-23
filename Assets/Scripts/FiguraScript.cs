@@ -22,7 +22,7 @@ public class FiguraScript : MonoBehaviour {
 		pos = transform.position;
 		velocidad *= -1;
 		vector_speed = new Vector2(0, velocidad);
-		vector_acelerado = new Vector2(0,velocidad*3);
+		vector_acelerado = new Vector2(0,velocidad*2);
 		rigidbody2D.velocity = vector_speed;
 		estado = MOVIENDOSE;
 		aceleracion = false;
@@ -65,7 +65,7 @@ public class FiguraScript : MonoBehaviour {
 					
 					if(Input.GetKey("a") || Input.GetKey("left")){
 						if(aceleracion)
-							rigidbody2D.velocity = new Vector2(-6,vector_acelerado.y);
+							rigidbody2D.velocity = new Vector2(-3,vector_acelerado.y);
 						else
 							rigidbody2D.velocity = new Vector2(-3,vector_speed.y);
 						if(estado!=TEMPORAL)
@@ -84,7 +84,7 @@ public class FiguraScript : MonoBehaviour {
 					
 					if(Input.GetKey("d") || Input.GetKey("right")){
 						if(aceleracion)
-							rigidbody2D.velocity = new Vector2(6,vector_acelerado.y);
+							rigidbody2D.velocity = new Vector2(3,vector_acelerado.y);
 						else
 							rigidbody2D.velocity = new Vector2(3,vector_speed.y);
 						if(estado!=TEMPORAL)

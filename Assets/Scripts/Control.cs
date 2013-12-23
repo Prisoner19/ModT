@@ -4,6 +4,7 @@ using System.Collections;
 public class Control : MonoBehaviour {
 	
 	private bool activo=true;
+	private int bloquesLinea;
 	public bool stop=false;
 	public float timer;
 	
@@ -28,6 +29,7 @@ public class Control : MonoBehaviour {
 		txt_freeze.guiText.text = "";
 		crearFigura();
 		bloqueActivo = null;
+		bloquesLinea = 12;
 	}
 	
 	// Update is called once per frame
@@ -63,11 +65,11 @@ public class Control : MonoBehaviour {
 	
 	public void crearFigura(){
 		
-		Vector3 posInicio = new Vector3(0.25f,6.75f,0);
+		Vector3 posInicio = new Vector3(0.25f,6.10f,0);
 		
 		int rand_fig = UnityEngine.Random.Range (1,6);
 		
-		Debug.Log("Prefabs/Figura"+ rand_fig);
+		//Debug.Log("Prefabs/Figura"+ rand_fig);
 		Instantiate(Resources.Load("Prefabs/Figura"+ rand_fig), posInicio, transform.rotation);
 		Instantiate(Resources.Load("Prefabs/CuadF"+ rand_fig), posInicio, transform.rotation);
 	}
@@ -86,6 +88,36 @@ public class Control : MonoBehaviour {
 			basura.transform.parent = basurero.transform;
 		}
 		GameObject.Destroy(basurero);
+	}
+
+	public void verificarLinea(int linea){
+		Transform row = GameObject.Find("Linea"+linea).transform;
+
+		if(row.childCount == bloquesLinea){
+			Debug.Log("Linea "+linea+" llena");
+			/*
+			for(int i=row.childCount-1; i>=0; i--){
+				Destroy(row.GetChild(i).gameObject);
+			}
+			actualizarLineas(linea);
+			*/
+		}
+
+	}
+
+	public void actualizarLineas(int row){
+		Vector3 pos;
+		for(int i=row; i<=9; i++){
+			Transform lineaArriba = GameObject.Find("Linea"+(row+1)).transform;
+			Transform lineaActual = GameObject.Find("Linea"+row).transform;
+			pos = lineaActual.position;
+			pos.y = pos.y - 1;
+			Debug.Log(lineaActual.transform.position.ToString("F2"));
+			for(int j=lineaArriba.childCount-1; j>=0; j--){
+				lineaArriba.GetChild(i).parent = lineaActual;
+			}
+			lineaArriba.position = pos;
+		}
 	}
 }
 
