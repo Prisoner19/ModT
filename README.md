@@ -1,4 +1,4 @@
-Trites
+ModT
 ======
 
-Titres, a Tetris mod.
+Tetris mod.
